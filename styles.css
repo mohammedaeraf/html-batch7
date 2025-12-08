@@ -1,0 +1,142 @@
+:root {
+  --grayish: #c3c9ce;
+  --navy-blue: #1b2328;
+  --vsc-blue: #4485ad;
+  --white: white;
+}
+
+header {
+  background-color: var(--grayish);
+  color: var(--navy-blue);
+  padding: 20px;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  box-sizing: border-box;
+}
+
+.header-h1-shadow {
+  font-weight: bold;
+  text-shadow: 5px 6px 10px rgba(Gray);
+}
+
+header h1 > span {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px gray;
+}
+
+header h1 > span:hover {
+  color: var(--vsc-blue);
+}
+
+header p > span:hover {
+  color: inherit;
+  text-decoration: underline #4485ad;
+}
+
+.nav-bg {
+  background-color: var(--navy-blue) !important;
+}
+
+.nav-text .nav-link,
+.navbar-brand {
+  color: white !important;
+}
+
+nav a.nav-link:hover {
+  color: #4485ad !important;
+  text-decoration: underline;
+}
+
+.border-secondary-1 {
+  border-color: #4485ad !important;
+}
+
+body {
+  background-color: var(--white);
+}
+
+main h2 {
+  color: var(--navy-blue);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+main h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--vsc-blue);
+  transition: width 0.3s ease-in-out;
+}
+
+main h2:hover {
+  transform: translateY(-5px);
+}
+
+main h2:hover::after {
+  width: 100%;
+}
+
+main section {
+  font-family: "Lexend", sans-serif;
+}
+
+section li,
+section p {
+  color: var(--vsc-blue);
+}
+
+.card-header {
+  background-color: var(--navy-blue);
+  color: var(--grayish);
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+section#about img {
+  transition: transform 0.3s ease-in-out;
+}
+
+section#about img:hover {
+  transform: scale(1.02);
+}
+
+nav img {
+  transition: transform 0.3s ease-in-out;
+}
+
+nav img:hover {
+  transform: scale(1.1);
+}
+
+.btn-gray {
+  background-color: var(--navy-blue);
+  color: var(--grayish);
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-gray:hover {
+  background-color: var(--vsc-blue);
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--navy-blue);
+  color: var(--grayish);
+}
